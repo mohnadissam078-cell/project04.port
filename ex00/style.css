@@ -1,0 +1,188 @@
+
+/* Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: midnightblue;
+    transition: 0.3s;
+}
+li{
+margin: 20px;
+}
+
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: aliceblue;
+}
+.card:hover {
+    color: royalblue;
+    transform: scale(1.05);
+    transition: 0.3s;
+
+    
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: midnightblue;
+}
+
+#themeBtn {
+    padding: 8px 12px;
+    cursor: pointer;
+    background: white;
+    color: midnightblue;
+    border: 1px solid royalblue;
+    border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background: aliceblue;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 250px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: royalblue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+span{
+    color: royalblue;
+}
+/* Sections */
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lang{flex: 1 1 200px;
+    padding: 20px;
+}
+.card {
+    flex: 1 1 200px;
+    padding: 20px;
+    background: aliceblue;
+    border: 1px solid lightsteelblue;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: aliceblue;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background: black;
+    color: white;
+}
+
+body.dark-theme .header,
+body.dark-theme .hero,
+body.dark-theme .card,
+body.dark-theme .footer {
+    background: rgb(12, 26, 71);
+}
+
+body.dark-theme nav a {
+    color: white;
+}
+
+body.dark-theme #themeBtn {
+    background: black;
+    color: white;
+}
+
+body.dark-theme .section h2 {
+    color: cornflowerblue;
+}
+.back-to-top{
+background-color: royalblue;
+color: white;
+position: absolute;
+right:10px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .header,
+    .hero {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+    }
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    position: absolute;
+    right: 20px;
+    border: 20px solid royalblue;
+}
